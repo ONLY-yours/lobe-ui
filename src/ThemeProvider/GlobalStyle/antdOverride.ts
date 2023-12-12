@@ -1,5 +1,5 @@
 import { Theme, css } from 'antd-style';
-import { readableColor } from 'polished';
+import { readableColor, rgba } from 'polished';
 
 export default (token: Theme) => css`
   .${token.prefixCls}-btn {
@@ -43,30 +43,20 @@ export default (token: Theme) => css`
     background: ${token.colorBgContainer} !important;
   }
 
-  .${token.prefixCls}-alert {
-    span[role='img'] {
-      align-self: flex-start;
-      width: 16px;
-      height: 16px;
-      margin-top: 3px;
-    }
+  .${token.prefixCls}-image-preview-close,
+    .${token.prefixCls}-image-preview-switch-right,.${token.prefixCls}-image-preview-switch-left {
+    ${token.stylish.blur};
+    border-radius: ${token.borderRadiusLG}px;
+    background: ${rgba(token.colorBgMask, 0.1)};
 
-    .${token.prefixCls}-alert-description {
-      word-break: break-all;
-      word-wrap: break-word;
-    }
+    width: 32px;
+    height: 32px;
 
-    &.${token.prefixCls}-alert-with-description {
-      padding-block: 12px;
-      padding-inline: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
-      .${token.prefixCls}-alert-message {
-        font-size: 14px;
-        font-weight: 600;
-        word-break: break-all;
-        word-wrap: break-word;
-      }
-    }
+    padding: 0;
   }
 
   @media (max-width: 575px) {

@@ -10,7 +10,7 @@
 
 Lobe UI is an open-source UI component library for building _AIGC_ web apps
 
-[Changelog](./CHANGELOG.md) · [Report Bug][github-issues-link] · [Request Feature][github-issues-link]
+English ・ [简体中文](./README.zh-CN.md) ・ [Changelog](./CHANGELOG.md) · [Report Bug][github-issues-link] · [Request Feature][github-issues-link]
 
 <!-- SHIELD GROUP -->
 
@@ -37,13 +37,10 @@ Lobe UI is an open-source UI component library for building _AIGC_ web apps
 #### TOC
 
 - [📦 Installation](#-installation)
-
   - [Compile with NextJS](#compile-with-nextjs)
-
+- [🤯 Usage](#-usage)
 - [⌨️ Local Development](#️-local-development)
-
 - [🤝 Contributing](#-contributing)
-
 - [🔗 More Products](#-more-products)
 
 ####
@@ -52,7 +49,7 @@ Lobe UI is an open-source UI component library for building _AIGC_ web apps
 
 ## 📦 Installation
 
-> **Important**\
+> \[!IMPORTANT]\
 > This package is [ESM only](https://gist.github.com/sindresorhus/a39789f98801d908bbc7ff3ecc99d99c).
 
 To install Lobe UI, run the following command:
@@ -65,7 +62,7 @@ $ bun add @lobehub/ui
 
 ### Compile with NextJS
 
-> **Note**\
+> \[!NOTE]\
 > By work correct with nextjs ssr, add `transpilePackages: ['@lobehub/ui']` to `next.config.js`. For example:
 
 ```js
@@ -85,7 +82,7 @@ const nextConfig = {
 
 ## 🤯 Usage
 
-> **Note**\
+> \[!NOTE]\
 > The LobeUI components are developed based on [Antd](https://ant.design/components/overview/), fully compatible with Antd components,
 > and it is recommended to use [antd-style](https://ant-design.github.io/antd-style/) as the default css-in-js styling solution.
 
@@ -105,7 +102,6 @@ export default () => (
 [![][back-to-top]](#readme-top)
 
 </div>
-
 
 ## ⌨️ Local Development
 

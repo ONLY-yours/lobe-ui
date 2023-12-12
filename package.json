@@ -1,6 +1,6 @@
 {
   "name": "@lobehub/ui",
-  "version": "1.115.2",
+  "version": "1.120.11",
   "description": "Lobe UI is an open-source UI component library for building AIGC web apps",
   "keywords": [
     "lobehub",
@@ -77,7 +77,6 @@
     "@emoji-mart/react": "^1",
     "@floating-ui/react": "^0",
     "@giscus/react": "^2",
-    "@lobehub/chat-plugin-sdk": "latest",
     "@lobehub/emojilib": "latest",
     "@react-spring/web": "^9",
     "@splinetool/react-spline": "^2.2.6",
@@ -123,7 +122,7 @@
     "@types/lodash-es": "^4",
     "@types/pangu": "^4",
     "@types/query-string": "^6",
-    "@types/react": "^18",
+    "@types/react": "18.2.40",
     "@types/react-dom": "^18",
     "@types/uuid": "^9",
     "@vitest/coverage-v8": "latest",

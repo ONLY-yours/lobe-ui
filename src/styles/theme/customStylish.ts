@@ -73,20 +73,17 @@ export const generateCustomStylish: GetCustomStylish<LobeCustomStylish> = ({
 
       p {
         margin-block: 0 0;
-
         font-size: 14px;
-        line-height: 1.8;
+        line-height: 2;
         color: ${token.colorText};
-        word-break: break-all;
-        word-wrap: break-word;
 
         + * {
-          margin-block-end: 0.5em;
+          margin-block-end: 1em;
         }
-      }
 
-      > *:last-child {
-        margin-bottom: 0 !important;
+        &:not(:last-child) {
+          margin-bottom: 1.5em;
+        }
       }
 
       blockquote {
@@ -97,10 +94,6 @@ export const generateCustomStylish: GetCustomStylish<LobeCustomStylish> = ({
           font-style: italic;
           color: ${token.colorTextDescription};
         }
-      }
-
-      p:not(:last-child) {
-        margin-bottom: 1em;
       }
 
       a {
@@ -126,11 +119,13 @@ export const generateCustomStylish: GetCustomStylish<LobeCustomStylish> = ({
 
         > code {
           padding: 0 !important;
+          background: unset !important;
           border: none !important;
+          border-radius: unset !important;
         }
       }
 
-      > :not([data-code-type='highlighter']) code {
+      *:not([data-code-type='highlighter'], pre) code {
         padding: 2px 6px;
 
         font-size: ${token.fontSizeSM}px;
@@ -248,6 +243,23 @@ export const generateCustomStylish: GetCustomStylish<LobeCustomStylish> = ({
         margin-top: 0;
         margin-block-start: 0;
         font-size: 1em;
+      }
+
+      > *:last-child {
+        margin-bottom: 0 !important;
+      }
+
+      p {
+        line-height: 1.8 !important;
+        white-space: pre-wrap !important;
+
+        + * {
+          margin-block-end: 0.5em !important;
+        }
+
+        &:not(:last-child) {
+          margin-bottom: 1em !important;
+        }
       }
     `,
     noScrollbar: css`

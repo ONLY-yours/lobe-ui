@@ -1,5 +1,6 @@
 export { default as ActionIcon, type ActionIconProps, type ActionIconSize } from './ActionIcon';
 export { default as ActionIconGroup, type ActionIconGroupProps } from './ActionIconGroup';
+export { default as Alert, type AlertProps } from './Alert';
 export { default as Avatar, type AvatarProps } from './Avatar';
 export { default as BackBottom, type BackBottomProps } from './BackBottom';
 export { default as Burger, type BurgerProps } from './Burger';
@@ -8,7 +9,7 @@ export {
   default as ChatHeaderTitle,
   type ChatHeaderTitleProps,
 } from './ChatHeader/ChatHeaderTitle';
-export { default as ChatInputArea, type ChatInputAreaProps } from './ChatInputArea';
+export * from './ChatInputArea';
 export { default as ChatItem, type ChatItemProps } from './ChatItem';
 export type {
   ChatListProps,
@@ -78,6 +79,8 @@ export {
 export { useChatListActionsBar } from './hooks/useChatListActionsBar';
 export { default as Icon, type IconProps, type IconSize } from './Icon';
 export * from './Icon/icons';
+export { default as Image, type ImageProps } from './Image';
+export { default as ImageGallery, type ImageGalleryProps } from './Image/ImageGallery';
 export { Input, type InputProps, TextArea, type TextAreaProps } from './Input';
 export {
   default as Layout,

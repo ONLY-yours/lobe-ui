@@ -1,64 +1,23 @@
 import { Loader2 } from 'lucide-react';
 import { forwardRef, useMemo } from 'react';
 
-import Icon, { type IconProps } from '@/Icon';
+import Icon, { type IconProps, type IconSizeConfig, type IconSizeType } from '@/Icon';
 import Spotlight from '@/Spotlight';
 import Tooltip, { type TooltipProps } from '@/Tooltip';
-import { DivProps } from '@/types';
 
+import { calcSize } from './calcSize';
 import { useStyles } from './style';
 
-export type ActionIconSize =
-  | 'large'
-  | 'normal'
-  | 'small'
-  | 'site'
-  | {
-      blockSize?: number;
-      borderRadius?: number;
-      fontSize?: number;
-      strokeWidth?: number;
-    };
+interface ActionIconSizeConfig extends IconSizeConfig {
+  blockSize?: number | string;
+  borderRadius?: number | string;
+}
 
-const calcSize = (size?: ActionIconSize) => {
-  let blockSize: number;
-  let borderRadius: number;
+type ActionIconSizeType = 'site' | IconSizeType;
 
-  switch (size) {
-    case 'large': {
-      blockSize = 44;
-      borderRadius = 8;
-      break;
-    }
-    case 'normal': {
-      blockSize = 36;
-      borderRadius = 5;
-      break;
-    }
-    case 'small': {
-      blockSize = 24;
-      borderRadius = 5;
-      break;
-    }
-    case 'site': {
-      blockSize = 34;
-      borderRadius = 5;
-      break;
-    }
-    default: {
-      blockSize = size?.blockSize || 36;
-      borderRadius = size?.borderRadius || 5;
-      break;
-    }
-  }
+export type ActionIconSize = ActionIconSizeType | ActionIconSizeConfig;
 
-  return {
-    blockSize,
-    borderRadius,
-  };
-};
-
-export interface ActionIconProps extends DivProps {
+export interface ActionIconProps extends Omit<IconProps, 'size' | 'icon'> {
   /**
    * @description Whether the icon is active or not
    * @default false
@@ -69,17 +28,12 @@ export interface ActionIconProps extends DivProps {
    * @default false
    */
   arrow?: boolean;
-  color?: IconProps['color'];
-  fill?: IconProps['fill'];
+  disable?: boolean;
   /**
    * @description Glass blur style
    * @default 'false'
    */
   glass?: boolean;
-  /**
-   * @description The icon element to be rendered
-   * @type LucideIcon
-   */
   icon?: IconProps['icon'];
   /**
    * @description Set the loading status of ActionIcon
@@ -92,7 +46,6 @@ export interface ActionIconProps extends DivProps {
    * @default "top"
    */
   placement?: TooltipProps['placement'];
-
   /**
    * @description Size of the icon
    * @default 'normal'
@@ -133,43 +86,41 @@ const ActionIcon = forwardRef<HTMLDivElement, ActionIconProps>(
       children,
       loading,
       tooltipDelay = 0.5,
+      fillOpacity,
+      fillRule,
+      focusable,
+      disable,
       ...rest
     },
     ref,
   ) => {
     const { styles, cx } = useStyles({ active: Boolean(active), glass: Boolean(glass) });
-
     const { blockSize, borderRadius } = useMemo(() => calcSize(size), [size]);
 
-    const content = (
-      <>
-        {icon && (
-          <Icon
-            className={styles.icon}
-            color={color}
-            fill={fill}
-            icon={icon}
-            size={size === 'site' ? 'normal' : size}
-          />
-        )}
-        {children}
-      </>
-    );
+    const iconProps = {
+      color,
+      fill,
+      fillOpacity,
+      fillRule,
+      focusable,
+      size: size === 'site' ? 'normal' : size,
+    };
 
-    const spin = (
-      <Icon color={color} icon={Loader2} size={size === 'site' ? 'normal' : size} spin />
-    );
+    const content = icon && <Icon className={styles.icon} icon={icon} {...iconProps} />;
+
+    const spin = <Icon icon={Loader2} {...iconProps} spin />;
 
     const actionIconBlock = (
       <div
-        className={cx(styles.block, className)}
-        onClick={loading ? undefined : onClick}
+        className={cx(styles.block, disable ? styles.disabled : styles.normal, className)}
+        onClick={loading || disable ? undefined : onClick}
         ref={ref}
         style={{ borderRadius, height: blockSize, width: blockSize, ...style }}
         {...rest}
       >
         {spotlight && <Spotlight />}
         {loading ? spin : content}
+        {children}
       </div>
     );
 
