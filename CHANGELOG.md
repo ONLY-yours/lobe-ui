@@ -2,6 +2,156 @@
 
 # Changelog
 
+## [Version 1.121.0](https://github.com/lobehub/lobe-ui/compare/v1.120.16...v1.121.0)
+
+<sup>Released on **2023-12-19**</sup>
+
+#### ✨ Features
+
+- **misc**: Add gap props to SliderWithInput.
+
+<br/>
+
+<details>
+<summary><kbd>Improvements and Fixes</kbd></summary>
+
+#### What's improved
+
+- **misc**: Add gap props to SliderWithInput ([f1a3898](https://github.com/lobehub/lobe-ui/commit/f1a3898))
+
+</details>
+
+<div align="right">
+
+[![](https://img.shields.io/badge/-BACK_TO_TOP-151515?style=flat-square)](#readme-top)
+
+</div>
+
+### [Version 1.120.16](https://github.com/lobehub/lobe-ui/compare/v1.120.15...v1.120.16)
+
+<sup>Released on **2023-12-18**</sup>
+
+#### 🐛 Bug Fixes
+
+- **misc**: DraggablePanelHeader children not working.
+
+<br/>
+
+<details>
+<summary><kbd>Improvements and Fixes</kbd></summary>
+
+#### What's fixed
+
+- **misc**: DraggablePanelHeader children not working ([1ba6291](https://github.com/lobehub/lobe-ui/commit/1ba6291))
+
+</details>
+
+<div align="right">
+
+[![](https://img.shields.io/badge/-BACK_TO_TOP-151515?style=flat-square)](#readme-top)
+
+</div>
+
+### [Version 1.120.15](https://github.com/lobehub/lobe-ui/compare/v1.120.14...v1.120.15)
+
+<sup>Released on **2023-12-15**</sup>
+
+#### 💄 Styles
+
+- **misc**: Fix function message width on mobile.
+
+<br/>
+
+<details>
+<summary><kbd>Improvements and Fixes</kbd></summary>
+
+#### Styles
+
+- **misc**: Fix function message width on mobile ([777396f](https://github.com/lobehub/lobe-ui/commit/777396f))
+
+</details>
+
+<div align="right">
+
+[![](https://img.shields.io/badge/-BACK_TO_TOP-151515?style=flat-square)](#readme-top)
+
+</div>
+
+### [Version 1.120.14](https://github.com/lobehub/lobe-ui/compare/v1.120.13...v1.120.14)
+
+<sup>Released on **2023-12-15**</sup>
+
+#### 💄 Styles
+
+- **misc**: Add NavBar variant.
+
+<br/>
+
+<details>
+<summary><kbd>Improvements and Fixes</kbd></summary>
+
+#### Styles
+
+- **misc**: Add NavBar variant ([731becb](https://github.com/lobehub/lobe-ui/commit/731becb))
+
+</details>
+
+<div align="right">
+
+[![](https://img.shields.io/badge/-BACK_TO_TOP-151515?style=flat-square)](#readme-top)
+
+</div>
+
+### [Version 1.120.13](https://github.com/lobehub/lobe-ui/compare/v1.120.12...v1.120.13)
+
+<sup>Released on **2023-12-13**</sup>
+
+#### 🐛 Bug Fixes
+
+- **misc**: Fix: Fix checkbox style and demo typo.
+
+<br/>
+
+<details>
+<summary><kbd>Improvements and Fixes</kbd></summary>
+
+#### What's fixed
+
+- **misc**: Fix: Fix checkbox style and demo typo ([a1e81af](https://github.com/lobehub/lobe-ui/commit/a1e81af))
+
+</details>
+
+<div align="right">
+
+[![](https://img.shields.io/badge/-BACK_TO_TOP-151515?style=flat-square)](#readme-top)
+
+</div>
+
+### [Version 1.120.12](https://github.com/lobehub/lobe-ui/compare/v1.120.11...v1.120.12)
+
+<sup>Released on **2023-12-12**</sup>
+
+#### 🐛 Bug Fixes
+
+- **misc**: ChatInputArea should add maxHeight api.
+
+<br/>
+
+<details>
+<summary><kbd>Improvements and Fixes</kbd></summary>
+
+#### What's fixed
+
+- **misc**: ChatInputArea should add maxHeight api ([c4f9f32](https://github.com/lobehub/lobe-ui/commit/c4f9f32))
+
+</details>
+
+<div align="right">
+
+[![](https://img.shields.io/badge/-BACK_TO_TOP-151515?style=flat-square)](#readme-top)
+
+</div>
+
 ### [Version 1.120.11](https://github.com/lobehub/lobe-ui/compare/v1.120.10...v1.120.11)
 
 <sup>Released on **2023-12-10**</sup>
