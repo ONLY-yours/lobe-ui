@@ -1,7 +1,13 @@
 import { Loader2 } from 'lucide-react';
 import { forwardRef, useMemo } from 'react';
+import { Flexbox, type FlexboxProps } from 'react-layout-kit';
 
-import Icon, { type IconProps, type IconSizeConfig, type IconSizeType } from '@/Icon';
+import Icon, {
+  type IconProps,
+  type IconSizeConfig,
+  type IconSizeType,
+  LucideIconProps,
+} from '@/Icon';
 import Spotlight from '@/Spotlight';
 import Tooltip, { type TooltipProps } from '@/Tooltip';
 
@@ -17,7 +23,7 @@ type ActionIconSizeType = 'site' | IconSizeType;
 
 export type ActionIconSize = ActionIconSizeType | ActionIconSizeConfig;
 
-export interface ActionIconProps extends Omit<IconProps, 'size' | 'icon'> {
+export interface ActionIconProps extends LucideIconProps, FlexboxProps {
   /**
    * @description Whether the icon is active or not
    * @default false
@@ -51,6 +57,7 @@ export interface ActionIconProps extends Omit<IconProps, 'size' | 'icon'> {
    * @default 'normal'
    */
   size?: ActionIconSize;
+  spin?: boolean;
   /**
    * @description Whether add spotlight background
    * @default false
@@ -111,8 +118,11 @@ const ActionIcon = forwardRef<HTMLDivElement, ActionIconProps>(
     const spin = <Icon icon={Loader2} {...iconProps} spin />;
 
     const actionIconBlock = (
-      <div
+      <Flexbox
+        align={'center'}
         className={cx(styles.block, disable ? styles.disabled : styles.normal, className)}
+        horizontal
+        justify={'center'}
         onClick={loading || disable ? undefined : onClick}
         ref={ref}
         style={{ borderRadius, height: blockSize, width: blockSize, ...style }}
@@ -121,7 +131,7 @@ const ActionIcon = forwardRef<HTMLDivElement, ActionIconProps>(
         {spotlight && <Spotlight />}
         {loading ? spin : content}
         {children}
-      </div>
+      </Flexbox>
     );
 
     if (!title) return actionIconBlock;

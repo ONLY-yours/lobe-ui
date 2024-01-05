@@ -1,6 +1,8 @@
 import { Space, message } from 'antd';
-import copy from 'copy-to-clipboard';
 import { memo } from 'react';
+import { Flexbox } from 'react-layout-kit';
+
+import { copyToClipboard } from '@/utils/copyToClipboard';
 
 import { alphaBg, useStyles } from './style';
 
@@ -44,16 +46,22 @@ const ScaleRow = memo<IScaleRow>(({ name, title, scale }) => {
           <div
             className={styles.scaleBox}
             key={index}
-            onClick={() => {
+            onClick={async () => {
               const content = `token.${name}${index}${isAlpha ? 'A' : ''} /* ${color} */`;
 
-              copy(content);
+              await copyToClipboard(content);
               message.success(content);
             }}
             style={style}
             title={color}
           >
-            <div className={styles.scaleItem} style={{ backgroundColor: color }} />
+            <Flexbox
+              align={'center'}
+              className={styles.scaleItem}
+              horizontal
+              justify={'center'}
+              style={{ backgroundColor: color }}
+            />
           </div>
         );
       })}

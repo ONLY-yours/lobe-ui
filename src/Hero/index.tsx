@@ -1,11 +1,12 @@
-import { GradientButton, Icon } from '@lobehub/ui';
 import { Button, ConfigProvider } from 'antd';
 import { useResponsive } from 'antd-style';
 import * as LucideIcon from 'lucide-react';
 import { memo, useCallback } from 'react';
 import { Center, Flexbox } from 'react-layout-kit';
 
+import GradientButton from '@/GradientButton';
 import GridBackground from '@/GridBackground';
+import Icon from '@/Icon';
 
 import { useStyles } from './style';
 
@@ -57,7 +58,7 @@ const Hero = memo<HeroProps>(({ title, description, actions }) => {
   const ButtonGroups = useCallback(
     () =>
       Boolean(actions?.length) && (
-        <div className={styles.actions}>
+        <Flexbox className={styles.actions} gap={24} horizontal justify={'center'}>
           {actions!.map(({ text, link, openExternal, icon, type }, index) => {
             // @ts-ignore
             const ButtonIcon = icon && LucideIcon[icon];
@@ -92,7 +93,7 @@ const Hero = memo<HeroProps>(({ title, description, actions }) => {
               </a>
             );
           })}
-        </div>
+        </Flexbox>
       ),
     [actions],
   );

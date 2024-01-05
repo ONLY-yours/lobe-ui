@@ -2,6 +2,449 @@
 
 # Changelog
 
+### [Version 1.125.8](https://github.com/lobehub/lobe-ui/compare/v1.125.7...v1.125.8)
+
+<sup>Released on **2024-01-02**</sup>
+
+#### 🐛 Bug Fixes
+
+- **misc**: Add types.
+
+<br/>
+
+<details>
+<summary><kbd>Improvements and Fixes</kbd></summary>
+
+#### What's fixed
+
+- **misc**: Add types ([0cf1111](https://github.com/lobehub/lobe-ui/commit/0cf1111))
+
+</details>
+
+<div align="right">
+
+[![](https://img.shields.io/badge/-BACK_TO_TOP-151515?style=flat-square)](#readme-top)
+
+</div>
+
+### [Version 1.125.7](https://github.com/lobehub/lobe-ui/compare/v1.125.6...v1.125.7)
+
+<sup>Released on **2024-01-02**</sup>
+
+#### 💄 Styles
+
+- **misc**: Export copyToClipboard.
+
+<br/>
+
+<details>
+<summary><kbd>Improvements and Fixes</kbd></summary>
+
+#### Styles
+
+- **misc**: Export copyToClipboard ([1dfddf5](https://github.com/lobehub/lobe-ui/commit/1dfddf5))
+
+</details>
+
+<div align="right">
+
+[![](https://img.shields.io/badge/-BACK_TO_TOP-151515?style=flat-square)](#readme-top)
+
+</div>
+
+### [Version 1.125.6](https://github.com/lobehub/lobe-ui/compare/v1.125.5...v1.125.6)
+
+<sup>Released on **2023-12-30**</sup>
+
+#### ♻ Code Refactoring
+
+- **misc**: Use `clipboard.writeText` to replace `copy-to-clipboard`.
+
+<br/>
+
+<details>
+<summary><kbd>Improvements and Fixes</kbd></summary>
+
+#### Code refactoring
+
+- **misc**: Use `clipboard.writeText` to replace `copy-to-clipboard`, closes [#110](https://github.com/lobehub/lobe-ui/issues/110) ([97a95e2](https://github.com/lobehub/lobe-ui/commit/97a95e2))
+
+</details>
+
+<div align="right">
+
+[![](https://img.shields.io/badge/-BACK_TO_TOP-151515?style=flat-square)](#readme-top)
+
+</div>
+
+### [Version 1.125.5](https://github.com/lobehub/lobe-ui/compare/v1.125.4...v1.125.5)
+
+<sup>Released on **2023-12-28**</sup>
+
+#### 🐛 Bug Fixes
+
+- **misc**: Fix editable message.
+
+<br/>
+
+<details>
+<summary><kbd>Improvements and Fixes</kbd></summary>
+
+#### What's fixed
+
+- **misc**: Fix editable message ([fa9741c](https://github.com/lobehub/lobe-ui/commit/fa9741c))
+
+</details>
+
+<div align="right">
+
+[![](https://img.shields.io/badge/-BACK_TO_TOP-151515?style=flat-square)](#readme-top)
+
+</div>
+
+### [Version 1.125.4](https://github.com/lobehub/lobe-ui/compare/v1.125.3...v1.125.4)
+
+<sup>Released on **2023-12-28**</sup>
+
+#### 🐛 Bug Fixes
+
+- **misc**: Message modal.
+
+<br/>
+
+<details>
+<summary><kbd>Improvements and Fixes</kbd></summary>
+
+#### What's fixed
+
+- **misc**: Message modal, closes [#109](https://github.com/lobehub/lobe-ui/issues/109) ([c9750a3](https://github.com/lobehub/lobe-ui/commit/c9750a3))
+
+</details>
+
+<div align="right">
+
+[![](https://img.shields.io/badge/-BACK_TO_TOP-151515?style=flat-square)](#readme-top)
+
+</div>
+
+### [Version 1.125.3](https://github.com/lobehub/lobe-ui/compare/v1.125.2...v1.125.3)
+
+<sup>Released on **2023-12-27**</sup>
+
+#### 🐛 Bug Fixes
+
+- **misc**: Fix message modal.
+
+<br/>
+
+<details>
+<summary><kbd>Improvements and Fixes</kbd></summary>
+
+#### What's fixed
+
+- **misc**: Fix message modal, closes [#107](https://github.com/lobehub/lobe-ui/issues/107) ([5bafec2](https://github.com/lobehub/lobe-ui/commit/5bafec2))
+
+</details>
+
+<div align="right">
+
+[![](https://img.shields.io/badge/-BACK_TO_TOP-151515?style=flat-square)](#readme-top)
+
+</div>
+
+### [Version 1.125.2](https://github.com/lobehub/lobe-ui/compare/v1.125.1...v1.125.2)
+
+<sup>Released on **2023-12-27**</sup>
+
+#### 🐛 Bug Fixes
+
+- **misc**: The `props` of the chat input section do not work.
+
+<br/>
+
+<details>
+<summary><kbd>Improvements and Fixes</kbd></summary>
+
+#### What's fixed
+
+- **misc**: The `props` of the chat input section do not work ([e367f8f](https://github.com/lobehub/lobe-ui/commit/e367f8f))
+
+</details>
+
+<div align="right">
+
+[![](https://img.shields.io/badge/-BACK_TO_TOP-151515?style=flat-square)](#readme-top)
+
+</div>
+
+### [Version 1.125.1](https://github.com/lobehub/lobe-ui/compare/v1.125.0...v1.125.1)
+
+<sup>Released on **2023-12-27**</sup>
+
+#### 🐛 Bug Fixes
+
+- **misc**: `onBlur` does not work.
+
+<br/>
+
+<details>
+<summary><kbd>Improvements and Fixes</kbd></summary>
+
+#### What's fixed
+
+- **misc**: `onBlur` does not work ([1c1d400](https://github.com/lobehub/lobe-ui/commit/1c1d400))
+
+</details>
+
+<div align="right">
+
+[![](https://img.shields.io/badge/-BACK_TO_TOP-151515?style=flat-square)](#readme-top)
+
+</div>
+
+## [Version 1.125.0](https://github.com/lobehub/lobe-ui/compare/v1.124.2...v1.125.0)
+
+<sup>Released on **2023-12-26**</sup>
+
+#### ✨ Features
+
+- **misc**: Update Modal components.
+
+#### 🐛 Bug Fixes
+
+- **misc**: Fix type, Lock @types/react, Refactor Modal component to handle dynamic content height.
+
+#### 💄 Styles
+
+- **misc**: Update Modal and Form style.
+
+<br/>
+
+<details>
+<summary><kbd>Improvements and Fixes</kbd></summary>
+
+#### What's improved
+
+- **misc**: Update Modal components ([2ad18c4](https://github.com/lobehub/lobe-ui/commit/2ad18c4))
+
+#### What's fixed
+
+- **misc**: Fix type ([9f2de1f](https://github.com/lobehub/lobe-ui/commit/9f2de1f))
+- **misc**: Lock @types/react ([7841e80](https://github.com/lobehub/lobe-ui/commit/7841e80))
+- **misc**: Refactor Modal component to handle dynamic content height ([5b79dfd](https://github.com/lobehub/lobe-ui/commit/5b79dfd))
+
+#### Styles
+
+- **misc**: Update Modal and Form style ([34de436](https://github.com/lobehub/lobe-ui/commit/34de436))
+
+</details>
+
+<div align="right">
+
+[![](https://img.shields.io/badge/-BACK_TO_TOP-151515?style=flat-square)](#readme-top)
+
+</div>
+
+### [Version 1.124.2](https://github.com/lobehub/lobe-ui/compare/v1.124.1...v1.124.2)
+
+<sup>Released on **2023-12-26**</sup>
+
+#### 💄 Styles
+
+- **misc**: Add props to Burger add ActionIcon.
+
+<br/>
+
+<details>
+<summary><kbd>Improvements and Fixes</kbd></summary>
+
+#### Styles
+
+- **misc**: Add props to Burger add ActionIcon ([eba50fa](https://github.com/lobehub/lobe-ui/commit/eba50fa))
+
+</details>
+
+<div align="right">
+
+[![](https://img.shields.io/badge/-BACK_TO_TOP-151515?style=flat-square)](#readme-top)
+
+</div>
+
+### [Version 1.124.1](https://github.com/lobehub/lobe-ui/compare/v1.124.0...v1.124.1)
+
+<sup>Released on **2023-12-25**</sup>
+
+#### 🐛 Bug Fixes
+
+- **misc**: Fix form flex.
+
+<br/>
+
+<details>
+<summary><kbd>Improvements and Fixes</kbd></summary>
+
+#### What's fixed
+
+- **misc**: Fix form flex ([e74f274](https://github.com/lobehub/lobe-ui/commit/e74f274))
+
+</details>
+
+<div align="right">
+
+[![](https://img.shields.io/badge/-BACK_TO_TOP-151515?style=flat-square)](#readme-top)
+
+</div>
+
+## [Version 1.124.0](https://github.com/lobehub/lobe-ui/compare/v1.123.1...v1.124.0)
+
+<sup>Released on **2023-12-25**</sup>
+
+#### ✨ Features
+
+- **misc**: Avatar supports ReactNode.
+
+<br/>
+
+<details>
+<summary><kbd>Improvements and Fixes</kbd></summary>
+
+#### What's improved
+
+- **misc**: Avatar supports ReactNode ([e93b196](https://github.com/lobehub/lobe-ui/commit/e93b196))
+
+</details>
+
+<div align="right">
+
+[![](https://img.shields.io/badge/-BACK_TO_TOP-151515?style=flat-square)](#readme-top)
+
+</div>
+
+### [Version 1.123.1](https://github.com/lobehub/lobe-ui/compare/v1.123.0...v1.123.1)
+
+<sup>Released on **2023-12-23**</sup>
+
+#### 💄 Styles
+
+- **misc**: Fix form style.
+
+<br/>
+
+<details>
+<summary><kbd>Improvements and Fixes</kbd></summary>
+
+#### Styles
+
+- **misc**: Fix form style ([618e2ad](https://github.com/lobehub/lobe-ui/commit/618e2ad))
+
+</details>
+
+<div align="right">
+
+[![](https://img.shields.io/badge/-BACK_TO_TOP-151515?style=flat-square)](#readme-top)
+
+</div>
+
+## [Version 1.123.0](https://github.com/lobehub/lobe-ui/compare/v1.122.2...v1.123.0)
+
+<sup>Released on **2023-12-22**</sup>
+
+#### ✨ Features
+
+- **misc**: Use memo wrapper in markdown.
+
+<br/>
+
+<details>
+<summary><kbd>Improvements and Fixes</kbd></summary>
+
+#### What's improved
+
+- **misc**: Use memo wrapper in markdown ([6db3b7a](https://github.com/lobehub/lobe-ui/commit/6db3b7a))
+
+</details>
+
+<div align="right">
+
+[![](https://img.shields.io/badge/-BACK_TO_TOP-151515?style=flat-square)](#readme-top)
+
+</div>
+
+### [Version 1.122.2](https://github.com/lobehub/lobe-ui/compare/v1.122.1...v1.122.2)
+
+<sup>Released on **2023-12-22**</sup>
+
+#### 💄 Styles
+
+- **misc**: Rename Form itemsType.
+
+<br/>
+
+<details>
+<summary><kbd>Improvements and Fixes</kbd></summary>
+
+#### Styles
+
+- **misc**: Rename Form itemsType ([cdf4d2c](https://github.com/lobehub/lobe-ui/commit/cdf4d2c))
+
+</details>
+
+<div align="right">
+
+[![](https://img.shields.io/badge/-BACK_TO_TOP-151515?style=flat-square)](#readme-top)
+
+</div>
+
+### [Version 1.122.1](https://github.com/lobehub/lobe-ui/compare/v1.122.0...v1.122.1)
+
+<sup>Released on **2023-12-22**</sup>
+
+#### 💄 Styles
+
+- **misc**: Update Form.
+
+<br/>
+
+<details>
+<summary><kbd>Improvements and Fixes</kbd></summary>
+
+#### Styles
+
+- **misc**: Update Form ([7be03f4](https://github.com/lobehub/lobe-ui/commit/7be03f4))
+
+</details>
+
+<div align="right">
+
+[![](https://img.shields.io/badge/-BACK_TO_TOP-151515?style=flat-square)](#readme-top)
+
+</div>
+
+## [Version 1.122.0](https://github.com/lobehub/lobe-ui/compare/v1.121.0...v1.122.0)
+
+<sup>Released on **2023-12-22**</sup>
+
+#### ✨ Features
+
+- **misc**: Add GaussianBackground.
+
+<br/>
+
+<details>
+<summary><kbd>Improvements and Fixes</kbd></summary>
+
+#### What's improved
+
+- **misc**: Add GaussianBackground ([62a5eac](https://github.com/lobehub/lobe-ui/commit/62a5eac))
+
+</details>
+
+<div align="right">
+
+[![](https://img.shields.io/badge/-BACK_TO_TOP-151515?style=flat-square)](#readme-top)
+
+</div>
+
 ## [Version 1.121.0](https://github.com/lobehub/lobe-ui/compare/v1.120.16...v1.121.0)
 
 <sup>Released on **2023-12-19**</sup>

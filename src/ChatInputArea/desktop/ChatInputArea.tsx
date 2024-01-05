@@ -58,9 +58,7 @@ const ChatInputArea = forwardRef<TextAreaRef, ChatInputAreaProps>(
       onSizeChange,
       heights,
       onSend,
-      onInput,
-      loading,
-      value,
+      ...rest
     },
     ref,
   ) => {
@@ -84,15 +82,13 @@ const ChatInputArea = forwardRef<TextAreaRef, ChatInputAreaProps>(
           <div className={styles.textareaContainer}>
             <ChatInputAreaInner
               className={styles.textarea}
-              loading={loading}
-              onInput={onInput}
               onSend={() => {
                 onSend?.();
                 setExpand?.(false);
               }}
               ref={ref}
               type={'pure'}
-              value={value}
+              {...rest}
             />
           </div>
           {bottomAddons}

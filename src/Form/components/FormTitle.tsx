@@ -1,10 +1,34 @@
+import { createStyles } from 'antd-style';
 import { ReactNode, memo } from 'react';
 import { Flexbox } from 'react-layout-kit';
 
 import Tag from '@/Tag';
 import { DivProps } from '@/types';
 
-import { useStyles } from './style';
+export const useStyles = createStyles(({ css, token, prefixCls }) => ({
+  formTitle: css`
+    position: relative;
+    text-align: left;
+
+    > div {
+      font-weight: 500;
+      line-height: 1;
+    }
+
+    > small {
+      display: block;
+
+      line-height: 1.2;
+      color: ${token.colorTextDescription};
+      word-wrap: break-word;
+      white-space: pre-wrap;
+    }
+
+    .${prefixCls}-tag {
+      font-family: ${token.fontFamilyCode};
+    }
+  `,
+}));
 
 export interface FormTitleProps extends DivProps {
   avatar?: ReactNode;
@@ -16,13 +40,13 @@ export interface FormTitleProps extends DivProps {
 const FormTitle = memo<FormTitleProps>(({ className, tag, title, desc, avatar }) => {
   const { cx, styles } = useStyles();
   const titleNode = (
-    <div className={cx(styles.formTitle, className)}>
+    <Flexbox className={cx(styles.formTitle, className)} gap={6}>
       <Flexbox align={'center'} direction={'horizontal'} gap={8}>
         {title}
         {tag && <Tag>{tag}</Tag>}
       </Flexbox>
       {desc && <small>{desc}</small>}
-    </div>
+    </Flexbox>
   );
 
   if (avatar) {

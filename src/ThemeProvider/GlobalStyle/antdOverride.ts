@@ -10,7 +10,7 @@ export default (token: Theme) => css`
     box-shadow: none;
   }
 
-  .${token.prefixCls}-btn-primary {
+  .${token.prefixCls}-btn-primary:not(:disabled) {
     color: ${readableColor(token.colorPrimary)} !important;
 
     &:hover {
@@ -61,6 +61,14 @@ export default (token: Theme) => css`
     justify-content: center;
 
     padding: 0;
+  }
+
+  .${token.prefixCls}-dropdown {
+    .${token.prefixCls}-dropdown-menu {
+      border: 1px solid ${token.colorBorderSecondary};
+      border-radius: ${token.borderRadius}px !important;
+      box-shadow: ${token.boxShadowSecondary};
+    }
   }
 
   @media (max-width: 575px) {

@@ -1,15 +1,14 @@
 import { createStyles } from 'antd-style';
 
 export const useStyles = createStyles(({ css, token, prefixCls, responsive }) => ({
-  footer: css`
-    display: flex;
-    gap: 8px;
-    justify-content: flex-end;
-  `,
   form: css`
+    position: relative;
+
     display: flex;
     flex-direction: column;
     gap: 16px;
+
+    width: 100%;
 
     ${responsive.mobile} {
       gap: 0;
@@ -32,6 +31,13 @@ export const useStyles = createStyles(({ css, token, prefixCls, responsive }) =>
       position: relative;
       flex: 1;
       max-width: 100%;
+    }
+
+    .${prefixCls}-form-item-row {
+      align-items: center;
+      ${responsive.mobile} {
+        align-items: stretch;
+      }
     }
 
     .${prefixCls}-form-item-control {

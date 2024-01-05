@@ -64,7 +64,7 @@ const MessageInput = memo<MessageInputProps>(
     classNames,
     ...rest
   }) => {
-    const [temporarySystemRole, setRole] = useState<string>(defaultValue || '');
+    const [temporaryValue, setValue] = useState<string>(defaultValue || '');
     const { cx, styles } = useStyles();
 
     const isAutoSize = height === 'auto';
@@ -75,24 +75,24 @@ const MessageInput = memo<MessageInputProps>(
           autoSize={isAutoSize}
           className={cx(styles, textareaClassname)}
           classNames={classNames}
-          onBlur={(e) => setRole(e.target.value)}
-          onChange={(e) => setRole(e.target.value)}
+          onBlur={(e) => setValue(e.target.value)}
+          onChange={(e) => setValue(e.target.value)}
           placeholder={placeholder}
           resize={false}
           style={{ height: isAutoSize ? 'unset' : height, minHeight: '100%', ...textareaStyle }}
           type={type}
-          value={temporarySystemRole}
+          value={temporaryValue}
         />
         <Flexbox direction={'horizontal-reverse'} gap={8}>
           {renderButtons ? (
-            renderButtons(temporarySystemRole).map((buttonProps, index) => (
+            renderButtons(temporaryValue).map((buttonProps, index) => (
               <Button key={index} size="small" {...buttonProps} />
             ))
           ) : (
             <>
               <Button
                 onClick={() => {
-                  onConfirm?.(temporarySystemRole);
+                  onConfirm?.(temporaryValue);
                 }}
                 size={editButtonSize}
                 type="primary"

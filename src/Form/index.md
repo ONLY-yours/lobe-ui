@@ -7,11 +7,11 @@ description: High performance Form component with data scope management. Includi
 
 ## Default
 
-<code src="./demos/index.tsx" center></code>
+<code src="./demos/index.tsx" nopadding></code>
 
-## DataDrive
+## Flat Type
 
-<code src="./demos/Data.tsx" center></code>
+<code src="./demos/Flat.tsx" center></code>
 
 ## APIs
 
